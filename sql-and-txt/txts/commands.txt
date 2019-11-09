@@ -1,5 +1,10 @@
 COMANDOS UTILIZADOS NO CURSO
 
+cd fj27-alura-forum-client/
+git checkout 01DandoInicioANossaAPI
+git checkout 06MaisAlemComSpringData1
+npm start
+
 Importar sem o Docker:
 mysql -u root fj27_spring < forum.sql
 
