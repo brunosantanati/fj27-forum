@@ -1,0 +1,9 @@
+COMANDOS UTILIZADOS NO CURSO
+
+Importar sem o Docker:
+mysql -u root fj27_spring < forum.sql
+
+Importar se o MySQL está no Docker:
+docker cp forum.sql mysql-dockerized:/forum.sql
+docker exec -it mysql-dockerized bash
+mysql -u root fj27_spring < forum.sql
