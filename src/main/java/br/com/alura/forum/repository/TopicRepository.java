@@ -11,5 +11,7 @@ public interface TopicRepository extends Repository<Topic, Long> {
 	
 	@Query("select t from Topic t")
 	List<Topic> list();
+	
+	List<Topic> findAll();
 
 }
