@@ -1,8 +1,13 @@
 COMANDOS UTILIZADOS NO CURSO
 
+sudo npm install -g create-react-app
+
 cd fj27-alura-forum-client/
+git remote add mygithub https://github.com/brunosantanati/fj27-alura-forum-client.git
+git push --all mygithub
 git checkout 01DandoInicioANossaAPI
 git checkout 06MaisAlemComSpringData1
+npm install
 npm start
 
 docker pull mysql
