@@ -5,6 +5,10 @@ git checkout 01DandoInicioANossaAPI
 git checkout 06MaisAlemComSpringData1
 npm start
 
+docker pull mysql
+docker run --rm -d -v ~/.var/lib/mysql:/var/lib/mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 --name mysql-dockerized mysql
+docker ps
+
 Importar sem o Docker:
 mysql -u root fj27_spring < forum.sql
 

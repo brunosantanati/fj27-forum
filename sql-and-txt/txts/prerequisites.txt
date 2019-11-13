@@ -1,0 +1,5 @@
+* Node versão 8.12.0 ou versão superior (LTS)
+* Banco de dados MySQL 5.7
+* redis-server versão 5.0.0
+* Eclipse Oxygen ou versão superior
+* JDK 8
