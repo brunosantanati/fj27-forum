@@ -7,6 +7,7 @@ git remote add mygithub https://github.com/brunosantanati/fj27-alura-forum-clien
 git push --all mygithub
 git checkout 01DandoInicioANossaAPI
 git checkout 06MaisAlemComSpringData1
+git checkout 07DocumentandoEInteragindoComOsEndpoints
 npm install
 npm start
 
