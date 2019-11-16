@@ -22,3 +22,9 @@ Importar se o MySQL está no Docker:
 docker cp forum.sql mysql-dockerized:/forum.sql
 docker exec -it mysql-dockerized bash
 mysql -u root fj27_spring < forum.sql
+
+Criar um usuário no banco para a autenticação com o Spring Security funcionar:
+docker exec -it mysql-dockerized bash
+mysql -u root fj27_spring
+executar o INSERT do arquivo insert-aluno.sql
+Logar com aluno@gmail.com e senha 123456
