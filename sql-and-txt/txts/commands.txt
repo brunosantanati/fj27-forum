@@ -28,3 +28,11 @@ docker exec -it mysql-dockerized bash
 mysql -u root fj27_spring
 executar o INSERT do arquivo insert-aluno.sql
 Logar com aluno@gmail.com e senha 123456
+
+Gerar token:
+curl -X POST "http://localhost:8080/api/auth" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"aluno@gmail.com\", \"password\": \"123456\"}"
+
+Acessar URL que necessita de autenticação passando o token:
+curl -H "Authorization: Bearer <ACCESS_TOKEN_AQUI>" -X GET http://localhost:8080/
+Exemplo:
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBbHVyYSBGb3J1bSBBUEkiLCJzdWIiOiI0IiwiaWF0IjoxNTc0NTIyNTI1LCJleHAiOjE1NzUxMjczMjV9.UMR3M0dyCpy945p3VnLjWwz3fdU6gW5zly3xcWyYkjw" -X GET http://localhost:8080/
