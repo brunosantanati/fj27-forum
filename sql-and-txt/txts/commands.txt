@@ -8,6 +8,7 @@ git push --all mygithub
 git checkout 01DandoInicioANossaAPI
 git checkout 06MaisAlemComSpringData1
 git checkout 07DocumentandoEInteragindoComOsEndpoints
+git checkout 09InserindoTopicos
 npm install
 npm start
 
