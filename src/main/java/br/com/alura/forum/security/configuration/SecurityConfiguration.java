@@ -1,4 +1,4 @@
-package br.com.alura.forum.configuration;
+package br.com.alura.forum.security.configuration;
 
 import java.io.IOException;
 

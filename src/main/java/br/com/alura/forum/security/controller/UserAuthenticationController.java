@@ -1,4 +1,4 @@
-package br.com.alura.forum.controller;
+package br.com.alura.forum.security.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
