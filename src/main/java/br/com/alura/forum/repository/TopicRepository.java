@@ -47,4 +47,5 @@ public interface TopicRepository extends Repository<Topic, Long>, JpaSpecificati
 	
 	public List<Topic> findByOwnerAndCreationInstantAfterOrderByCreationInstantAsc(User loggedUser, Instant oneHourAgo);
 
+	Topic findById(Long id);
 }

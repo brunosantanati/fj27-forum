@@ -9,6 +9,7 @@ git checkout 01DandoInicioANossaAPI
 git checkout 06MaisAlemComSpringData1
 git checkout 07DocumentandoEInteragindoComOsEndpoints
 git checkout 09InserindoTopicos
+git checkout origin/10RespondendoDuvidas
 npm install
 npm start
 
