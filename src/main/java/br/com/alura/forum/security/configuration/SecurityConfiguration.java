@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
@@ -30,6 +31,7 @@ import br.com.alura.forum.security.jwt.TokenManager;
 import br.com.alura.forum.security.service.UsersService;
 
 @Configuration
+@Order(2)
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
@@ -47,11 +49,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
-		http.authorizeRequests()
-			.antMatchers("/admin/reports/**").permitAll()
-			.antMatchers(HttpMethod.GET, "/api/topics/**").permitAll()
-			.antMatchers("/api/auth/**").permitAll()
-			.anyRequest().authenticated()
+		http.antMatcher("/api/**")
+			.authorizeRequests()
+				.antMatchers(HttpMethod.GET, "/api/topics/**").permitAll()
+				.antMatchers("/api/auth/**").permitAll()
+				.anyRequest().authenticated()
 		.and()
 			.cors()
 		.and()
