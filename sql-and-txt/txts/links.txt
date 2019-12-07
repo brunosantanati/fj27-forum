@@ -10,3 +10,6 @@ https://drive.google.com/open?id=1NK8gnYNE71GOX1PbBaY321W_WsFEC6Kr
 
 Link da documentação gerada pelo Swagger:
 http://localhost:8080/swagger-ui.html
+
+Link do report:
+http://localhost:8080/admin/reports/open-topics-by-category
