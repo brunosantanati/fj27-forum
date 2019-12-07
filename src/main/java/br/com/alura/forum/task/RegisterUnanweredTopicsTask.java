@@ -19,7 +19,7 @@ public class RegisterUnanweredTopicsTask {
 	@Autowired
 	private OpenTopicsByCategoryRepository openTopicsByCategoryRepository;
 	
-	@Scheduled(cron = "* */10 * * * *") //em prod seria algo como agendamento todo dia às 20h: "0 0 20 * * *"
+	@Scheduled(cron = "0 0 20 * * *")
 	public void execute() {
 		List<OpenTopicsByCategory> topics = topicRepository.findOpenTopicsByCategory();
 		this.openTopicsByCategoryRepository.saveAll(topics);
