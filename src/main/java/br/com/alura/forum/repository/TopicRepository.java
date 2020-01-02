@@ -44,7 +44,7 @@ public interface TopicRepository extends Repository<Topic, Long>, JpaSpecificati
 			+ "WHERE category = :category AND topic.status = 'NOT_ANSWERED'")
 	int countUnansweredTopicsByCategory(@Param("category") Category category);
 	
-	void save(Topic topic);
+	Topic save(Topic topic);
 	
 	public List<Topic> findByOwnerAndCreationInstantAfterOrderByCreationInstantAsc(User loggedUser, Instant oneHourAgo);
 
