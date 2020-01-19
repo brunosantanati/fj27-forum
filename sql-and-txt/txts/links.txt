@@ -12,4 +12,13 @@ Link da documentação gerada pelo Swagger:
 http://localhost:8080/swagger-ui.html
 
 Link do report:
-http://localhost:8080/admin/reports/open-topics-by-category
+http://localhost:8080/admin/reports/open-topics-by-categoryt
+
+Actuator
+http://localhost:8080/admin/actuator
+http://localhost:8080/admin/actuator/health
+http://localhost:8080/admin/actuator/info
+http://localhost:8080/admin/actuator/open-topics-by-category
+
+user admin: rafael.rollo@caelum.com.br
+password: rafael
